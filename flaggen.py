@@ -1,7 +1,7 @@
 """
 leetify_random.py – Randomly leetify text to CTF-style flag format.
 
-Regex enforced:  ^ctf{[\w_!@#?$%\.'"+:->]{5,50}}$
+Regex enforced:  ^ducactf{[\w_!@#?$%\.'"+:->]{5,50}}$
 """
 
 import re
@@ -25,7 +25,7 @@ LEET_DICT = {
 ALLOWED_PATTERN = re.compile(r"[\w_!@#?$%\.'\"+\:->]")
 
 # Full flag format
-FLAG_RE = re.compile(r"^ctf{[\w_!@#?$%\.'\"+\:->]{5,50}}$")
+FLAG_RE = re.compile(r"^ducactf{[\w_!@#?$%\.'\"+\:->]{5,50}}$")
 
 
 def leetify_random(text: str, seed: int = None) -> str:
